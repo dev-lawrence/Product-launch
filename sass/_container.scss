@@ -1,0 +1,76 @@
+@use './abstracts' as *;
+
+.container {
+  max-width: 1440px;
+  padding: 0 1rem;
+  margin: 0 auto;
+
+  @include landscape {
+    width: 576px;
+    margin: 0 auto;
+  }
+
+  @include desktop {
+    width: 769px;
+  }
+
+  @include desktop-md {
+    width: 992px;
+  }
+
+  @include large {
+    width: 1000px;
+  }
+}
+
+@include desktop {
+  .hero {
+    .d-grid {
+      @include grid(repeat(2, 1fr), 0rem);
+      place-items: center;
+    }
+    &__img {
+      display: flex;
+    }
+
+    &__info {
+      h1 {
+        &::after {
+          content: '';
+          background-image: url(../../dist/img/figma-logo.svg);
+          @include image-property();
+          position: absolute;
+          top: 0;
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+}
+
+@include desktop-md {
+  .hero {
+    &__info {
+      h1 {
+        &::after {
+          right: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@include large {
+  .hero {
+    &__info {
+      h1 {
+        font-size: 3.5rem;
+        &::after {
+          top: 0.5rem;
+          left: 13rem;
+        }
+      }
+    }
+  }
+}
