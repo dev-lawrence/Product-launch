@@ -11,7 +11,7 @@ const body = document.querySelector('body');
 const showBg = () => {
   const scroll = window.scrollY;
 
-  if (scroll > 200) {
+  if (scroll > 100) {
     header.classList.add('showBg');
   } else {
     header.classList.remove('showBg');

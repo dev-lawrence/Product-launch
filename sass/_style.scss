@@ -41,23 +41,22 @@ li {
   list-style: none;
 }
 
-// .pt-section {
-//   padding-top: 5rem;
-// }
+.pt-section {
+  padding-top: 3rem;
+}
 
-// .title {
-//   margin-bottom: 3rem;
-// }
+.title {
+  margin-bottom: 3rem;
+}
 
-// .title h2 {
-//   font-size: 2rem;
-//   text-align: center;
+.title h2 {
+  font-size: 2rem;
+  text-align: center;
 
-//   @include large {
-//     text-align: left;
-//     font-size: 2.5rem;
-//   }
-// }
+  @include large {
+    font-size: 2.5rem;
+  }
+}
 
 /* Header Section */
 .header {
@@ -237,266 +236,28 @@ li {
   }
 }
 
-// Service section
-// .service {
-//   position: relative;
+// Features section
+.features {
+  background-color: var(--secondary-clr);
+  color: #000;
+  padding-bottom: 3rem;
 
-//   &__text {
-//     margin-bottom: 2rem;
-//     h2 {
-//       font-size: 2rem;
-//       margin-bottom: 0.5rem;
+  &__content {
+    text-align: center;
+  }
 
-//       @include extra-small {
-//         font-size: 1.5rem;
-//       }
-//     }
+  .feature {
+    img {
+      width: 50px;
+      height: 50px;
+      object-fit: cover;
+    }
+    h3 {
+      font-size: 1.3rem;
+    }
 
-//     p {
-//       margin-bottom: 1.5rem;
-//       line-height: 1.7;
-//     }
-
-//     .stats {
-//       @include flex(center, flex-start);
-//       flex-wrap: wrap;
-
-//       span {
-//         font-size: 1.5rem;
-//         position: relative;
-
-//         &::after {
-//           content: ('+');
-//         }
-//       }
-
-//       p {
-//         color: var(--light-clr);
-//       }
-
-//       .ml {
-//         margin-left: 3rem;
-
-//         @include extra-small {
-//           margin-left: 0;
-//         }
-//       }
-//     }
-//   }
-
-//   &__info {
-//     .card {
-//       background-color: var(--card-clr);
-//       @include flex(center, space-evenly);
-
-//       @include extra-small {
-//         display: block;
-//         text-align: center;
-//       }
-//       padding: 2rem;
-//       padding-bottom: 3rem;
-
-//       ol {
-//         font-size: 2rem;
-//         display: inline-block;
-//       }
-
-//       &:not(:last-child) {
-//         margin-bottom: 1.5rem;
-//       }
-
-//       &__info {
-//         transform: translateY(8px);
-
-//         h3 {
-//           font-size: 1.3rem;
-//         }
-//         p {
-//           color: var(--light-clr);
-//           transform: translateY(5px);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// Project section
-// .project {
-//   .card {
-//     background-color: var(--card-clr);
-
-//     .img {
-//       width: 100%;
-//       height: 300px;
-//       @include image-property();
-//     }
-
-//     .card-1 {
-//       background-image: url(../../dist/img/card1.png);
-//     }
-
-//     .card-2 {
-//       background-image: url(../../dist/img/card2.jpg);
-//     }
-
-//     .card-3 {
-//       background-image: url(../../dist/img/card3.jpg);
-//     }
-
-//     .card-4 {
-//       background-image: url(../../dist/img/card4.png);
-//     }
-
-//     &:not(:last-child) {
-//       margin-bottom: 3rem;
-//     }
-
-//     &__info {
-//       text-align: center;
-//       padding: 2rem;
-
-//       &-title {
-//         margin-bottom: 3rem;
-//         caption {
-//           color: var(--secondary-clr);
-//         }
-
-//         h3 {
-//           font-size: 1.4rem;
-//         }
-//       }
-
-//       &-details {
-//         p {
-//           color: var(--light-clr);
-//           margin-bottom: 0.3rem;
-//         }
-
-//         .btn {
-//           color: var(--primary-clr);
-//         }
-//       }
-//     }
-//   }
-// }
-
-// BLog section
-// .blog {
-//   &__post {
-//     background-color: var(--card-clr);
-//   }
-
-//   .content {
-//     padding: 2rem 1rem;
-
-//     &__title {
-//       margin-bottom: 1rem;
-//     }
-
-//     span {
-//       font-size: 0.9rem;
-//       color: var(--white-clr);
-//       letter-spacing: 1px;
-//     }
-
-//     h3 {
-//       font-weight: 500;
-//       margin-bottom: 0.3rem;
-//     }
-
-//     .author,
-//     .text {
-//       color: var(--light-clr);
-//     }
-
-//     .btn {
-//       margin-top: 1rem;
-//       position: relative;
-//       font-size: 1.1rem;
-//       color: var(--primary-clr);
-
-//       &::after {
-//         font-family: 'Font Awesome 5 Free';
-//         font-weight: 900;
-//         content: '\f061';
-//         margin-left: 0.5rem;
-//         display: inline-block;
-//         transform: translateY(0.1rem);
-//       }
-//     }
-//   }
-// }
-
-// Contact section
-// .contact {
-//   position: relative;
-//   &__title {
-//     max-width: 700px;
-//     h2 {
-//       margin-bottom: 1rem;
-//       font-size: 2rem;
-
-//       @include extra-small {
-//         font-size: 1.5rem;
-//       }
-
-//       @include large {
-//         font-size: 2.5rem;
-//       }
-//     }
-//     a {
-//       font-size: 1.2rem;
-//       color: var(--primary-clr);
-//     }
-//   }
-// }
-
-// Footer section
-// .footer {
-//   text-align: center;
-//   margin-bottom: 2rem;
-
-//   .logo {
-//     margin-bottom: 0.5rem;
-//   }
-
-//   p {
-//     margin-bottom: 1rem;
-
-//     a {
-//       color: var(--primary-clr);
-//     }
-//   }
-
-//   &__links {
-//     @include flex(center, center);
-//     flex-wrap: wrap;
-
-//     & li {
-//       display: inline-block;
-//       margin-right: 1.3rem;
-//       @include extra-small {
-//         margin-bottom: 1.5rem;
-//       }
-
-//       a {
-//         font-size: 1.2rem;
-//         height: 40px;
-//         width: 40px;
-//         border-radius: 50%;
-//         display: grid;
-//         place-content: center;
-//         background-color: #282a2a;
-//         transition: transform 0.3s ease-in;
-
-//         &:hover {
-//           transform: translateY(-5px);
-//         }
-//       }
-//     }
-
-//     a {
-//       color: var(--white-clr);
-//     }
-//   }
-// }
+    &:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+}
