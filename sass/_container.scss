@@ -63,6 +63,24 @@
       column-gap: 3rem;
     }
   }
+
+  .templates {
+    .d-grid {
+      @include grid(repeat(2, 1fr), 2rem);
+    }
+
+    .d-flex {
+      @include flex(center, space-between);
+    }
+
+    .card {
+      &__info {
+        h4 {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 @include desktop-md {
