@@ -1,4 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
+.btn {
+  background-color: var(--primary-clr);
+  color: var(--black-clr);
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.55rem 1.25rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}
+
 /* Basic styles */
 *::before,
 *::after,
@@ -218,11 +234,7 @@ li {
   margin-bottom: 1.5rem;
 }
 .hero__info .cta {
-  background-color: var(--primary-clr);
-  color: var(--black-clr);
-  font-weight: 500;
   padding: 0.8rem 1.25rem;
-  border-radius: 0.375rem;
 }
 
 .features {
@@ -245,6 +257,35 @@ li {
   margin-bottom: 2rem;
 }
 
+.templates__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 1rem;
+  margin-bottom: 2rem;
+}
+.templates__list .list {
+  color: var(--white-clr);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: 1px solid var(--secondary-clr);
+  transition: all 150ms linear;
+}
+.templates__list .list:hover {
+  background-color: var(--secondary-clr);
+  color: var(--black-clr);
+}
+.templates__list .list.active {
+  background-color: var(--secondary-clr);
+  color: var(--black-clr);
+}
+@media (min-width: 769px) {
+  .templates__list .list {
+    margin-right: 1.5rem;
+  }
+}
 .templates__cards .card {
   border-bottom: 2px solid var(--white-clr);
 }
@@ -282,12 +323,39 @@ li {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-.templates__cards .btn {
-  background-color: var(--primary-clr);
-  color: var(--black-clr);
-  font-weight: 500;
-  padding: 0.4rem 1.25rem;
-  border-radius: 0.375rem;
+.templates__cards .card.show {
+  animation: show 0.5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+.templates__cards .card.hide {
+  animation: hide 0.5s ease 0s 1 forwards;
+  transform-origin: center;
+}
+@keyframes hide {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+}
+@keyframes show {
+  0% {
+    transform: scale(0);
+    width: 0;
+    height: 0;
+    margin: 0;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.up {
+  margin-top: 10rem;
 }
 
 .container {

@@ -1,0 +1,17 @@
+@use '../abstracts' as *;
+
+.btn {
+  background-color: var(--primary-clr);
+  color: var(--black-clr);
+  border-radius: 0.375rem;
+  font-weight: 500;
+  padding: 0.55rem 1.25rem;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+}

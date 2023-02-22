@@ -44,7 +44,7 @@
               A huge selection of different pages which makes your workflow
               easier while building bussiness.
             </p>
-            <a href="#" class="cta">Explore Templates</a>
+            <a href="#" class="btn cta">Explore Templates</a>
           </div>
 
           <div class="hero__img">
@@ -133,15 +133,23 @@
     <!-- Templates section -->
     <section id="templates" class="templates pt-section">
       <div class="container">
-        <div class="title">
-          <h2>Templates</h2>
+        <div class="d-flex">
+          <div class="title">
+            <h2>Templates</h2>
+          </div>
+          <div class="templates__list">
+            <li class="list active" data-filter="all">All</li>
+            <li class="list" data-filter="app">App</li>
+            <li class="list" data-filter="business">Business</li>
+            <li class="list" data-filter="virtual-reality">Virtual Reality</li>
+          </div>
         </div>
 
         <div class="templates__cards d-grid">
-          <div class="card">
+          <div class="card app one" data-template="app">
             <div class="card__content">
-              <h3>Byte <small> - New looping video app</small></h3>
-              <img src="./img/card-1.jpg" alt="" />
+              <h3>Byte 1<small> - New looping video app</small></h3>
+              <img src="./img/app-1.jpg" alt="" />
               <div class="card__info d-flex">
                 <h4>Portfolio website</h4>
                 <a href="#" class="btn">View Template</a>
@@ -149,10 +157,10 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card app two" data-template="app">
             <div class="card__content">
-              <h3>Byte <small> - New looping video app</small></h3>
-              <img src="./img/card-1.jpg" alt="" />
+              <h3>Slidebean 2 <small> - Pitch deck design</small></h3>
+              <img src="./img/app-2.jpg" alt="" />
               <div class="card__info d-flex">
                 <h4>Portfolio website</h4>
                 <a href="#" class="btn">View Template</a>
@@ -160,10 +168,10 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card business three" data-template="business">
             <div class="card__content">
-              <h3>Byte <small> - New looping video app</small></h3>
-              <img src="./img/card-1.jpg" alt="" />
+              <h3>Dashkit 3<small> - Track your sales</small></h3>
+              <img src="./img/business-1.jpg" alt="" />
               <div class="card__info d-flex">
                 <h4>Portfolio website</h4>
                 <a href="#" class="btn">View Template</a>
@@ -171,10 +179,35 @@
             </div>
           </div>
 
-          <div class="card">
+          <div class="card business four" data-template="business">
             <div class="card__content">
-              <h3>Byte <small> - New looping video app</small></h3>
-              <img src="./img/card-1.jpg" alt="" />
+              <h3>Dashkit 4<small> - Track your sales</small></h3>
+              <img src="./img/business-2.jpg" alt="" />
+              <div class="card__info d-flex">
+                <h4>Portfolio website</h4>
+                <a href="#" class="btn">View Template</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="card virtual-reality five"
+            data-template="virtual-reality"
+          >
+            <div class="card__content">
+              <h3>Apple park 5<small> - Augmented reality</small></h3>
+              <img src="./img/vr-1.jpg" alt="" />
+              <div class="card__info d-flex">
+                <h4>Portfolio website</h4>
+                <a href="#" class="btn">View Template</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="card virtual-reality six" data-template="virtual-reality">
+            <div class="card__content">
+              <h3>Apple park 6 <small> - Augmented reality</small></h3>
+              <img src="./img/vr-2.jpg" alt="" />
               <div class="card__info d-flex">
                 <h4>Portfolio website</h4>
                 <a href="#" class="btn">View Template</a>
@@ -185,6 +218,7 @@
       </div>
     </section>
 
+    <div class="up"></div>
     <!-- Blog section -->
     <!-- <section id="blog" class="blog pt-section">
       <div class="container">
