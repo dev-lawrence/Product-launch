@@ -59,6 +59,32 @@ const filterTemplates = (e) => {
   }
 };
 
+// Testiomnial function
+var slider = tns({
+  container: '.my-slider',
+  items: 3,
+  mouseDrag: true,
+  autoplay: true,
+  autoplayButtonOutput: false,
+  controls: false,
+  nav: false,
+  speed: 1000,
+
+  responsive: {
+    0: {
+      items: 1,
+    },
+
+    992: {
+      items: 2,
+    },
+
+    1440: {
+      items: 3,
+    },
+  },
+});
+
 // Event listeners
 navLinks.forEach(changeActiveLink);
 toggle.addEventListener('click', showNavItems);
