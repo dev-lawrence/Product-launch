@@ -428,6 +428,125 @@ li {
   }
 }
 
+// Pricing section
+.pricing {
+  --card-clr: #1d2531;
+  display: none;
+
+  .d-flex {
+    @include flex(center, space-around);
+  }
+  &__content {
+    background-color: var(--secondary-clr);
+    color: var(--black-clr);
+    border-radius: 1rem;
+    padding: 0 2rem 3rem;
+
+    img {
+      width: 30px;
+      height: 30px;
+    }
+
+    h3 {
+      max-width: 300px;
+    }
+  }
+
+  &__plans {
+    text-align: center;
+    column-gap: 0.5rem;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    .plan,
+    .inverse {
+      padding: 3rem 1.5rem;
+      transition: all 0.2s ease;
+
+      &__info {
+        margin-bottom: 3rem;
+        line-height: 1.4;
+
+        h3 {
+          font-size: 1.3rem;
+        }
+
+        span {
+          color: var(--bg-clr);
+          font-size: 3rem;
+          font-weight: 600;
+        }
+      }
+
+      .btn {
+        border-radius: 2rem;
+        background-color: transparent;
+        border: 2px solid var(--bg-clr);
+        transition: all 0.2s ease;
+      }
+    }
+
+    .plan:hover {
+      background-color: var(--card-clr);
+      color: var(--white-clr);
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+      span {
+        color: var(--white-clr);
+      }
+
+      .btn {
+        background-color: var(--primary-clr);
+        border-color: transparent;
+      }
+    }
+
+    .inverse {
+      background-color: var(--card-clr);
+      color: var(--white-clr);
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+
+      span {
+        color: var(--white-clr);
+      }
+
+      .btn {
+        background-color: var(--primary-clr);
+        border-color: transparent;
+      }
+    }
+  }
+
+  .grey {
+    background-color: #9fa9b7;
+  }
+
+  .feature {
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+
+    i {
+      background-color: var(--card-clr);
+      color: var(--white-clr);
+      height: 20px;
+      width: 20px;
+      font-size: 0.9rem;
+      display: grid;
+      place-content: center;
+      border-radius: 50%;
+    }
+    .d-flex {
+      @include flex(center, space-between);
+    }
+  }
+}
+
 .up {
   margin-top: 10rem;
 }
