@@ -26,6 +26,7 @@ body {
   color: var(--secondary-clr);
   background-color: var(--bg-clr);
   line-height: 1.6;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -543,6 +544,45 @@ li {
     }
     .d-flex {
       @include flex(center, space-between);
+    }
+  }
+}
+
+// Get started section
+.get-started {
+  margin-top: 5rem;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  background-color: var(--secondary-clr);
+  text-align: center;
+  color: var(--black-clr);
+
+  .content {
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    img {
+      position: absolute;
+      top: -3rem;
+      right: 0rem;
+    }
+    h2 {
+      line-height: 1.5;
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+
+      @include desktop {
+        font-size: 2rem;
+      }
+
+      @include large {
+        font-size: 2.3rem;
+      }
+    }
+
+    .btn {
+      background-color: var(--bg-clr);
+      color: var(--white-clr);
     }
   }
 }

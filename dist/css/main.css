@@ -40,6 +40,7 @@ body {
   color: var(--secondary-clr);
   background-color: var(--bg-clr);
   line-height: 1.6;
+  text-size-adjust: 100%;
 }
 
 img {
@@ -509,6 +510,44 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.get-started {
+  margin-top: 5rem;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  background-color: var(--secondary-clr);
+  text-align: center;
+  color: var(--black-clr);
+}
+.get-started .content {
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+}
+.get-started .content img {
+  position: absolute;
+  top: -3rem;
+  right: 0rem;
+}
+.get-started .content h2 {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+@media (min-width: 769px) {
+  .get-started .content h2 {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1200px) {
+  .get-started .content h2 {
+    font-size: 2.3rem;
+  }
+}
+.get-started .content .btn {
+  background-color: var(--bg-clr);
+  color: var(--white-clr);
 }
 
 .up {
