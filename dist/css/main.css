@@ -550,8 +550,38 @@ li {
   color: var(--white-clr);
 }
 
-.up {
-  margin-top: 10rem;
+.footer__about {
+  max-width: 500px;
+  margin-bottom: 1.5rem;
+}
+.footer__about a {
+  margin-bottom: 1rem;
+}
+.footer__about p {
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: var(--light-clr);
+}
+.footer h4 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+.footer ul:not(:last-child) {
+  margin-bottom: 2rem;
+}
+.footer ul li {
+  margin-bottom: 1rem;
+}
+.footer ul a {
+  color: var(--light-clr);
+  transition: color 150ms ease-in;
+}
+.footer ul a:hover {
+  color: var(--primary-clr);
+}
+.footer .copyright {
+  text-align: center;
+  padding: 3.75rem 0 2.5rem;
 }
 
 .container {
@@ -630,6 +660,16 @@ li {
   .templates .card__info h4 {
     margin-bottom: 0;
   }
+  .footer .d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+  .footer ul:nth-child(2),
+  .footer ul:nth-child(3),
+  .footer ul:nth-child(5) {
+    justify-self: center;
+  }
 }
 @media (min-width: 1024px) {
   .hero__info h1::after {
@@ -646,5 +686,13 @@ li {
   }
   .pricing {
     display: block;
+  }
+  .footer .d-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
+  }
+  .footer ul:nth-child(4) {
+    justify-self: center;
   }
 }

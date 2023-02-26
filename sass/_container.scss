@@ -81,6 +81,18 @@
       }
     }
   }
+
+  .footer {
+    .d-grid {
+      @include grid(repeat(3, 1fr), 1rem);
+    }
+
+    ul:nth-child(2),
+    ul:nth-child(3),
+    ul:nth-child(5) {
+      justify-self: center;
+    }
+  }
 }
 
 @include desktop-md {
@@ -110,5 +122,15 @@
 
   .pricing {
     display: block;
+  }
+
+  .footer {
+    .d-grid {
+      @include grid(repeat(5, 1fr), 1rem);
+    }
+
+    ul:nth-child(4) {
+      justify-self: center;
+    }
   }
 }

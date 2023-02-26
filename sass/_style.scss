@@ -587,6 +587,49 @@ li {
   }
 }
 
-.up {
-  margin-top: 10rem;
+// Footer section
+.footer {
+  &__about {
+    max-width: 500px;
+    margin-bottom: 1.5rem;
+
+    a {
+      margin-bottom: 1rem;
+    }
+
+    p {
+      line-height: 1.6;
+      margin-bottom: 20px;
+      color: var(--light-clr);
+    }
+  }
+
+  h4 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  ul:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  ul {
+    li {
+      margin-bottom: 1rem;
+    }
+
+    a {
+      color: var(--light-clr);
+      transition: color 150ms ease-in;
+
+      &:hover {
+        color: var(--primary-clr);
+      }
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    padding: 3.75rem 0 2.5rem;
+  }
 }
