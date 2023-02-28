@@ -262,9 +262,9 @@ li {
 // Templates section
 .templates {
   &__list {
-    @include flex(center, space-between);
+    @include flex(center, space-evenly);
     flex-wrap: wrap;
-    row-gap: 1rem;
+    row-gap: 1.5rem;
     margin-bottom: 2rem;
 
     .list {

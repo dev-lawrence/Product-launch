@@ -261,9 +261,9 @@ li {
 .templates__list {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-evenly;
   flex-wrap: wrap;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
   margin-bottom: 2rem;
 }
 .templates__list .list {
@@ -282,7 +282,7 @@ li {
   background-color: var(--secondary-clr);
   color: var(--black-clr);
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .templates__list .list {
     margin-right: 1.5rem;
   }
@@ -293,7 +293,7 @@ li {
 .templates__cards .card:not(:last-child) {
   margin-bottom: 3rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .templates__cards .card:not(:last-child) {
     margin-bottom: 0;
   }
@@ -313,7 +313,7 @@ li {
   text-align: center;
   margin: 1rem 0 2rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .templates__cards .card__info {
     margin-bottom: 1rem;
   }
@@ -535,7 +535,7 @@ li {
   font-size: 1.5rem;
   margin-bottom: 1rem;
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .get-started .content h2 {
     font-size: 2rem;
   }
@@ -595,7 +595,7 @@ li {
     margin: 0 auto;
   }
 }
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .container {
     width: 769px;
   }
@@ -611,7 +611,7 @@ li {
   }
 }
 
-@media (min-width: 769px) {
+@media (min-width: 768px) {
   .hero .d-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
